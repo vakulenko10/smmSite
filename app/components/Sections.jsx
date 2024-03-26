@@ -8,6 +8,7 @@ import Loader from './Loader';
 import { motion, useTransform, AnimatePresence, useInView, useAnimation, useScroll } from 'framer-motion';
 
 import Link from 'next/link';
+import Image from 'next/image';
 export const HelloBg = ({collectionName}) => {
   // const controls = useAnimation();
   const ref = useRef(null);
@@ -21,7 +22,7 @@ export const HelloBg = ({collectionName}) => {
             
           </motion.div>
           <motion.div  className='absolute w-full h-1/4 bottom-0'>
-              <Link href="#"><img className="absolute bottom-0 left-0 h-1/2 rotate-[-45deg]" src="https://res.cloudinary.com/dohnhiqxw/image/upload/v1711407499/aboutMe/smb3q0fheymjqvg3orcg.png" alt="image"/></Link>
+              <Link href="#"><Image className="absolute bottom-0 left-0 h-1/2 rotate-[-45deg]" src="https://res.cloudinary.com/dohnhiqxw/image/upload/v1711407499/aboutMe/smb3q0fheymjqvg3orcg.png" alt="image"/></Link>
               </motion.div>
     </AnimatePresence>
   );
@@ -48,7 +49,7 @@ export const AboutBg = ({collectionName}) => {
             
           </motion.div>
           <motion.div className='absolute w-full h-1/4 bottom-0'>
-            <img className="absolute bottom-0 right-0 h-2/3 rotate-[45deg]" src="https://res.cloudinary.com/dohnhiqxw/image/upload/v1711406822/aboutMe/i6soy7aej5zqe7pldbfu.png"  alt="image"></img>
+            <Image className="absolute bottom-0 right-0 h-2/3 rotate-[45deg]" src="https://res.cloudinary.com/dohnhiqxw/image/upload/v1711406822/aboutMe/i6soy7aej5zqe7pldbfu.png"  alt="image"></Image>
           </motion.div>
         </motion.div>
     </div>
@@ -67,7 +68,7 @@ export const PortfolioBg = ({collectionName}) => {
             
           </motion.div>
           <motion.div  className='absolute w-full h-1/4 bottom-0 '>
-              <Link href="#"><img className="absolute bottom-0 left-0 w-[100px] h-auto rotate-[-45deg] z-100" src="https://res.cloudinary.com/dohnhiqxw/image/upload/v1711472633/myPortfolio/aus6rmappv4anxjtfdkg.png" alt="image"/></Link>
+              <Link href="#"><Image className="absolute bottom-0 left-0 w-[100px] h-auto rotate-[-45deg] z-100" src="https://res.cloudinary.com/dohnhiqxw/image/upload/v1711472633/myPortfolio/aus6rmappv4anxjtfdkg.png" alt="image"/></Link>
               </motion.div>
     </AnimatePresence>
   );
@@ -85,7 +86,7 @@ export const FAQSbg = ({collectionName}) => {
             
           </motion.div>
           <motion.div  className='absolute w-full h-1/4 bottom-0 '>
-              <Link href="#"><img className="absolute bottom-0 left-0 w-[100px] h-auto rotate-[-45deg] z-100" src="https://res.cloudinary.com/dohnhiqxw/image/upload/v1711472633/myPortfolio/aus6rmappv4anxjtfdkg.png" alt="image"/></Link>
+              <Link href="#"><Image className="absolute bottom-0 left-0 w-[100px] h-auto rotate-[-45deg] z-100" src="https://res.cloudinary.com/dohnhiqxw/image/upload/v1711472633/myPortfolio/aus6rmappv4anxjtfdkg.png" alt="image"/></Link>
               </motion.div>
     </AnimatePresence>
   );

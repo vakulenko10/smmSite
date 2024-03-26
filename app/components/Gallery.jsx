@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { renderTextByProperty } from './mainconsts';
+import Image from 'next/image';
 
 const Gallery = ({ sectionData }) => {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -57,7 +58,7 @@ const Gallery = ({ sectionData }) => {
             className={`${isPortfolioItemOpened ? 'absolute top-0 p-3 left-0 overflow-hidden h-full w-screen z-10 bg-[#9CAFAA]' : 'hidden'}`}
           >
             <div key={`${selectedItem['imageURL']}-div`} className='PortfolioItemInfo flex items-center justify-between box-border overflow-y-visible text-wrap h-full rounded-md'>
-              <img src={selectedItem['imageURL']} alt='selected-item' className={` ${isPortfolioItemOpened ?'object-contain ':'object-cover'} w-1/2   rounded-md mb-4`}/>
+              <Image src={selectedItem['imageURL']} alt='selected-item' className={` ${isPortfolioItemOpened ?'object-contain ':'object-cover'} w-1/2   rounded-md mb-4`}/>
               {Object.keys(selectedItem).map((prop, index) => {
                 if (prop !== 'imageURL') {
                   return <div key={index-1} className='break-words w-1/3 justify-self-start'>{renderTextByProperty(prop, selectedItem[prop], index, 'text-white ')}</div>;

@@ -35,7 +35,7 @@ const Carousel = ({ sectionData }) => {
           transition={{ duration: 0.5 }}
           ref={ref}>
           <motion.div className='h-1/2 md:h-3/4 overflow-hidden relative' initial={{x: 100}} whileInView={{x:0}} >
-            {/* Render image on the right side . */}
+            {/* Render image on the right side m */}
             {activeItemProps.includes('imageURL') && (
               <div className='w-full relative flex h-full overflow-hidden justify-center items-center '>
                 <img src={activeItem['imageURL']} className='h-full w-full md:h-full object-contain' alt="Image" />
